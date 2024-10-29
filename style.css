@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", serif;
+}
+
+/*------------------------------------------------------> Usage*/
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.margin-low {
+  margin: 0 0 !important;
+}
+
+/*------------------------------------------------------> Header*/
+
+header {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(229, 0, 119);
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  align-items: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .logo img {
+  width: 2rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+header nav ul {
+}
+
+header nav ul li {
+  display: inline;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 0 0.8rem;
+  text-align: center;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  bottom: -9px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+  width: 6rem;
+}
+
+header .find {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+header .find::after {
+  color: #fff;
+  font-size: 1.5rem;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  bottom: -6px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+header .find:hover::after {
+  width: 2rem;
+}
+
+.login {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 1rem 0 2rem;
+  transition: all 0.5s ease;
+}
+
+.login:hover {
+  background-color: #fff;
+  color: rgb(229, 0, 119);
+}
+
+.sig {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 2.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgb(229, 0, 119);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sig:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* ----------------------------------------------------> Categories*/
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.categories-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categories-content .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.categories-content .block img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.categories-content .block p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #141414;
+}
+
+/* -------------------------------------------------------> Slider*/
+
+.slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 20rem;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  align-items: center;
+}
+
+.slide {
+  min-width: calc(100% / 3);
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 94%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------> Products */
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-content {
+  margin: 6rem 0 0 0;
+}
+
+.products-content .txt {
+  text-align: left;
+}
+
+.products-content .txt h2 {
+  color: rgb(71, 31, 5);
+  font-size: 2rem;
+}
+
+.products-content .txt h3 {
+  color: rgb(71, 31, 5);
+  font-size: 1.5rem;
+}
+
+.products-content .txt h3 a {
+  color: rgb(229, 0, 119);
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.products-content .buttons {
+  margin-bottom: 2rem;
+}
+
+.products-content .buttons .btnPro {
+  margin-top: 0.7rem;
+  background-color: transparent;
+  border: 1px solid rgb(71, 31, 5);
+  padding: 0.3rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  color: rgb(71, 31, 5);
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.products-content .buttons .btnPro:hover {
+  background-color: #0000001c;
+}
+
+.product-slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-slider .box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 1.4rem 0 0;
+  cursor: pointer;
+}
+
+.product-slider .box img {
+  width: 13em;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-slider .box .dark {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: absolute;
+  background-color: #000;
+  z-index: 1000;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.product-slider .box .state {
+  position: relative;
+  color: #fff;
+  z-index: 10000;
+  font-weight: 700;
+  bottom: 28px;
+  left: 5px;
+  font-size: 0.9rem;
+}
+
+.product-slider .box .time {
+  position: relative;
+  color: #fff;
+  z-index: 10000;
+  font-weight: 700;
+  bottom: 50px;
+  left: 150px;
+  font-size: 0.9rem;
+}
+
+.product-slider .box p {
+  position: relative;
+  color: #2b2a2a;
+  z-index: 10000;
+  font-weight: 700;
+  bottom: 40px;
+  left: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* --------------------------------------------------------> Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(237, 231, 226);
+}
+
+footer .footer-information {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 12rem;
+}
+
+footer .info {
+  display: flex;
+  text-align: left;
+}
+
+footer .info .foot-text {
+  margin: 0 2rem 0 0;
+}
+
+footer .info .foot-text h4 {
+  color: rgb(104, 72, 51);
+}
+
+footer .info .foot-text p {
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+}
+
+footer .line {
+  background-color: #000;
+  width: 1px;
+}
+
+footer .img {
+  display: flex;
+  align-items: center;
+}
+
+footer .img img {
+  width: 3rem;
+  margin: 0 0.5rem;
+}
+
+.footer-end {
+  text-align: center;
+}
+
+.footer-end p {
+  font-size: 0.7rem;
+}
