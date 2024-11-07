@@ -13,7 +13,7 @@ let index = 0;
 function startSlider() {
     setInterval(() => {
         index++;
-        if (index === totalSlides) { 
+        if (index === totalSlides) {
             slidesContainer.style.transition = 'none'; // Desactivamos la transición temporalmente
             index = 0; // Reiniciamos el índice
             slidesContainer.style.transform = `translateX(0)`; // Regresamos al inicio
@@ -28,4 +28,30 @@ function startSlider() {
 
 // Iniciar el carrusel
 startSlider();
+
+/* ---------------------------------------------> */
+// Seleccionamos los elementos
+const content = document.querySelector('.carousel-content-products .content');
+const prevButton = document.querySelector('.carousel-content-products .previous');
+const nextButton = document.querySelector('.carousel-content-products .next');
+
+// Definimos la cantidad de desplazamiento
+const scrollAmount = 200; // Ajusta este valor según el tamaño de cada item
+
+// Evento para desplazarse a la izquierda
+prevButton.addEventListener('click', () => {
+    content.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
+// Evento para desplazarse a la derecha
+nextButton.addEventListener('click', () => {
+    content.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+});
+
 
