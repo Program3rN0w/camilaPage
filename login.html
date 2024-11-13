@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEB PAGE</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="left">
+            <div class="logo"><a href="index.html"><img src="img/caju.png" alt="Logo"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="recipes.html"><ion-icon name="create-outline"></ion-icon> <span>Recetas</span></a></li>
+                    <li><a href="books.html"><ion-icon name="library-outline"></ion-icon> Recetarios</a></li>
+                    <li><a href="learn.html"><ion-icon name="school-outline"></ion-icon> Aprende</a></li>
+                    <li><a href=""><ion-icon name="calendar-outline"></ion-icon> Planificador</a></li>
+                    <li><a href=""><ion-icon name="people-outline"></ion-icon> Comunidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <span class="find"><ion-icon name="search"></ion-icon></span>
+            <button class="login">Iniciar Secion</button>
+            <button class="sig">Registrate</button>
+        </div>
+    </header>
+
+    <div class="margin"></div>
+    <div class="form-container container">
+        <h2>Inicia sesión</h2>
+        <input type="text" id="username" placeholder="Nombre de usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button class="login-btn" onclick="login()">Iniciar Sesión</button>
+        <button class="register-btn" onclick="register()">Registrarse</button>
+        <p class="message" id="message"></p>
+    </div>
+    <div class="margin"></div>
+
+    <footer>
+        <div class="footer-information">
+            <div class="info">
+                <div class="foot-text">
+                    <h4>Mapa del sitio</h4>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                </div>
+                <div class="foot-text">
+                    <h4>Mapa del sitio</h4>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                </div>
+                <div class="foot-text">
+                    <h4>Mapa del sitio</h4>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                    <p>Todas las recetas</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="img">
+                <img src="img/LOGO TAOS.jpg" alt="img">
+                <img src="" alt="img">
+                <img src="" alt="img">
+                <img src="" alt="img">
+                <img src="" alt="img">
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>©2019, Nestlé. Marcas registradas por Société des produits Nestlé, S.A. Vevey (Suiza)
+
+                Aviso de Privacidad
+                Términos y condiciones
+                Contáctanos
+                Configuración de cookies</p>
+        </div>
+    </footer>
+
+
+    <!--Scripts-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js.js"></script>
+
+</body>
+
+</html>

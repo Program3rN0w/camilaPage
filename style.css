@@ -12,6 +12,7 @@
 :root {
   --color-dark: #252323;
   --color-pink: rgb(229, 0, 119);
+  --color-pink-2: rgb(184, 9, 99);
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   margin: 0 0 !important;
 }
 
-.dark-img {
+/*.dark-img {
   position: absolute;
   width: 12rem;
   height: 12rem;
@@ -47,7 +48,7 @@ body {
   background-color: #000;
   opacity: .3;
 }
-
+*/
 a {
   color: var(--color-dark);
 }
@@ -62,6 +63,15 @@ a {
   margin-top: 5rem;
   margin-left: 4rem;
   opacity: .4;
+}
+
+.btn-pink {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-pink);
+  cursor: pointer;
+
 }
 
 /*------------------------------------------------------> Header*/
@@ -378,7 +388,9 @@ header .find:hover::after {
 
 footer {
   display: flex;
+  position: absolute;
   flex-direction: column;
+  width: 100%;
   background-color: rgb(237, 231, 226);
 }
 
@@ -462,6 +474,7 @@ footer .img img {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+
 }
 
 .carousel-product .carousel-content {
@@ -482,6 +495,7 @@ footer .img img {
 .carousel-content-products {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .carousel-content-products .previous {
@@ -492,6 +506,7 @@ footer .img img {
   font-size: 2rem;
   color: var(--color-pink);
   cursor: pointer;
+  z-index: 10000000;
 }
 
 .carousel-content-products .next {
@@ -502,6 +517,7 @@ footer .img img {
   font-size: 2rem;
   color: var(--color-pink);
   cursor: pointer;
+  z-index: 10000000;
 }
 
 .carousel-content-products .content {
@@ -509,6 +525,8 @@ footer .img img {
   width: 100%;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s ease-in-out;
+  /* Transición de suavidad */
 }
 
 .content .box-carousel {
@@ -539,6 +557,7 @@ footer .img img {
   height: 12rem;
   border-radius: 1rem;
   object-fit: cover;
+  filter: brightness(50%);
 }
 
 .content .box-carousel .bottom-txt-img .state {
@@ -597,4 +616,280 @@ footer .img img {
 .info-web .info-web-content .img-web img {
   width: 30rem;
   position: relative;
+}
+
+/*-------------------------------------------------------------> Products Buttons*/
+
+.products-content .buttons .btnPro2 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-pink);
+  margin: 0 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 3px;
+  transition: all 0.5s ease;
+}
+
+.products-content .buttons .btnPro2:hover {
+  border-bottom: 1px solid var(--color-pink);
+  padding: 3px;
+}
+
+/*--------------------------------------------------------------> Find*/
+
+.find-container {
+  background-color: var(--color-pink);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.find-content .heading {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.box-find {
+  display: flex;
+  justify-content: center;
+}
+
+.input-mod {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.input-mod input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-mod input::placeholder {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-mod ion-icon {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.button-find {
+  margin-left: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--color-pink);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------> Recipes Find*/
+
+.recipes {
+  padding: 2rem 0;
+}
+
+.recipes .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe-card h2 {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  margin: 0.5rem 0;
+}
+
+.recipe-card p {
+  color: #444;
+  padding: 0 1rem 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .find-content .heading {
+    font-size: 1.5rem;
+  }
+
+  .recipe-card img {
+    height: 120px;
+  }
+}
+
+/*---------------------------------------------------> Learned*/
+
+.learn-container {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.learn-header {
+  margin-bottom: 2rem;
+}
+
+.learn-heading {
+  font-size: 2rem;
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.learn-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.learn-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.learn-card:hover {
+  transform: translateY(-5px);
+}
+
+.learn-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.learn-card h2 {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  margin: 1rem 0 0.5rem;
+}
+
+.learn-card p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.learn-btn {
+  background-color: var(--color-pink);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.learn-btn:hover {
+  background-color: #ff6a85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .learn-heading {
+    font-size: 1.5rem;
+  }
+
+  .learn-card img {
+    height: 120px;
+  }
+}
+
+/*-------------------------------------------------------> Form Login*/
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+}
+
+.margin {
+  margin-top: 10rem;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.form-container .login-btn {
+  background-color: var(--color-pink);
+  color: white;
+}
+
+.form-container .login-btn:hover {
+  background-color: var(--color-pink-2);
+}
+
+.form-container .register-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.form-container .register-btn:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #d9534f;
 }

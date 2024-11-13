@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buscador de Recetarios</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <div class="logo"><a href="index.html"><img src="img/caju.png" alt="Logo"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="recipes.html"><ion-icon name="create-outline"></ion-icon> <span>Recetas</span></a></li>
+                    <li><a href="books.html"><ion-icon name="library-outline"></ion-icon> Recetarios</a></li>
+                    <li><a href="learn.html"><ion-icon name="school-outline"></ion-icon> Aprende</a></li>
+                    <li><a href="#"><ion-icon name="calendar-outline"></ion-icon> Planificador</a></li>
+                    <li><a href="#"><ion-icon name="people-outline"></ion-icon> Comunidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <span class="find"><ion-icon name="search"></ion-icon></span>
+            <button class="login">Iniciar Sesión</button>
+            <button class="sig">Regístrate</button>
+        </div>
+    </header>
+
+    <div class="find-container">
+        <div class="find-content">
+            <h1 class="heading">Descubre todos los recetarios</h1>
+            <div class="box-find">
+                <div class="input-mod">
+                    <ion-icon name="search"></ion-icon>
+                    <input type="text" id="searchInput" placeholder="Buscar Recetarios">
+                </div>
+                <button class="button-find" onclick="searchRecipes()">Mostrar Resultados</button>
+            </div>
+            <div class="results" id="resultsContainer"></div>
+        </div>
+    </div>
+
+    <section class=" recipes">
+        <div class="container">
+            <div class="recipe-card">
+                <img src="img/recetario1.jpg" alt="Recetario 1">
+                <h2>Recetario de Postres</h2>
+                <p>Deliciosas recetas de postres para toda la familia.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="img/recetario2.jpg" alt="Recetario 2">
+                <h2>Recetario de Comida Saludable</h2>
+                <p>Recetas para mantener una dieta balanceada y saludable.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="img/recetario3.jpg" alt="Recetario 3">
+                <h2>Recetario de Platos Rápidos</h2>
+                <p>Recetas fáciles y rápidas para preparar en poco tiempo.</p>
+            </div>
+            <!-- Puedes añadir más tarjetas de recetarios aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-information">
+            <div class="info">
+                <div class="foot-text">
+                    <h4>Mapa del sitio</h4>
+                    <p>Todas las recetas</p>
+                    <p>Recetarios</p>
+                    <p>Planificador</p>
+                    <p>Comunidad</p>
+                </div>
+                <!-- Agrega más secciones si es necesario -->
+            </div>
+            <div class="line"></div>
+            <div class="img">
+                <img src="img/LOGO TAOS.jpg" alt="Logo TAOS">
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>©2019, Nestlé. Marcas registradas por Société des produits Nestlé, S.A. Vevey (Suiza)</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
